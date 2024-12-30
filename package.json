@@ -4,8 +4,8 @@
     "description": "A simple Node.js server for URL redirection",
     "main": "redirect-server.js",
     "scripts": {
-      "start": "node redirect-server.js",
-      "dev": "nodemon redirect-server.js"
+      "start": "node index.js",
+      "dev": "node index.js"
     },
     "author": "Your Name",
     "license": "MIT",
