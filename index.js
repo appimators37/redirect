@@ -14,9 +14,9 @@ const server = http.createServer((req, res) => {
             res.writeHead(301, { Location: 'https://sky.snapi.com/b/DG7Q5om6lr74Fn1ulwbn' });
             res.end();
         } else if (url.startsWith('/v/')) {
-            // Allow '/v/' routes to pass through without redirection
-            res.writeHead(200, { 'Content-Type': 'text/plain' });
-            res.end(`Serving the same path: https://sky.snapi.com${url}`);
+            // Redirect '/v/' routes to the same path on the https://sky.snapi.com domain
+            res.writeHead(301, { Location: `https://sky.snapi.com${url}` });
+            res.end();
         } else {
             // Handle other paths (optional)
             res.writeHead(404, { 'Content-Type': 'text/plain' });
