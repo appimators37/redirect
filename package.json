@@ -1,0 +1,14 @@
+{
+    "name": "url-redirect-server",
+    "version": "1.0.0",
+    "description": "A simple Node.js server for URL redirection",
+    "main": "redirect-server.js",
+    "scripts": {
+      "start": "node redirect-server.js",
+      "dev": "nodemon redirect-server.js"
+    },
+    "author": "Your Name",
+    "license": "MIT",
+    "dependencies": {}
+  }
+  
